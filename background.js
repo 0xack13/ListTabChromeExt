@@ -18,6 +18,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     window.tabs.forEach(function(tab){
       //collect all of the urls here, I will just log them instead
       console.log(tab.title, " --> ", tab.url, "\n\n");
+      document.write(tab.title, "<br>", tab.url, "<br><br>");
     });
   });
 }); 

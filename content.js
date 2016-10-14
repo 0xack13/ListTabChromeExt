@@ -11,3 +11,5 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
+chrome.browserAction.onClicked.addListener(function(tab) { alert('icon clicked')});
